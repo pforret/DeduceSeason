@@ -5,10 +5,10 @@ Github:
 ![Tests](https://github.com/pforret/DeduceSeason/workflows/Run%20Tests/badge.svg)
 
 Packagist: 
-[![Packagist Version](https://img.shields.io/packagist/v/pforret/DeduceSeason.svg?style=flat-square)](https://packagist.org/packages/pforret/DeduceSeason)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/pforret/DeduceSeason.svg?style=flat-square)](https://packagist.org/packages/pforret/DeduceSeason)
+[![Packagist Version](https://img.shields.io/packagist/v/pforret/deduceseason.svg?style=flat-square)](https://packagist.org/packages/pforret/deduceseason)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/pforret/deduceseason.svg?style=flat-square)](https://packagist.org/packages/pforret/deduceseason)
 
-deduce season from date and location
+deduce season from date and location (latitude)
 
 	created on 2023-11-12 by peter@forret.com
 
@@ -23,8 +23,7 @@ composer require pforret/DeduceSeason
 ## Usage
 
 ``` php
-$obj = new Pforret\DeduceSeason();
-echo $obj->echoPhrase('Hello, pforret!');
+DeduceSeason::fromDateAndLatitude('2020-01-01', 52,336) // DeduceSeason::SEASON_WINTER
 ```
 
 ## Testing
