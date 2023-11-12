@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "nesbot/carbon": "^2.71"
+        "nesbot/carbon": "^2.0"
     },
     "require-dev": {
         "laravel/pint": "^1.13",
