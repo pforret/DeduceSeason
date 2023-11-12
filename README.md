@@ -8,22 +8,22 @@ Packagist:
 [![Packagist Version](https://img.shields.io/packagist/v/pforret/deduceseason.svg?style=flat-square)](https://packagist.org/packages/pforret/deduceseason)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/pforret/deduceseason.svg?style=flat-square)](https://packagist.org/packages/pforret/deduceseason)
 
-deduce season from date and location (latitude)
+![](assets/unsplash.seasons.jpg)
 
-	created on 2023-11-12 by peter@forret.com
+deduce season from date and location (latitude)
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require pforret/DeduceSeason
+composer require pforret/deduceseason
 ```
 
 ## Usage
 
 ``` php
-DeduceSeason::fromDateAndLatitude('2020-01-01', 52,336) // DeduceSeason::SEASON_WINTER
+$season = DeduceSeason::fromDateAndLatitude('2020-01-01', 52.336) // DeduceSeason::SEASON_WINTER
 ```
 
 ## Testing
