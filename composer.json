@@ -1,12 +1,12 @@
 {
-    "name": "pforret/DeduceSeason",
+    "name": "pforret/deduceseason",
     "version": "2.0.1",
     "description": "deduce season from date and location",
     "keywords": [
         "pforret",
-        "DeduceSeason"
+        "deduceseason"
     ],
-    "homepage": "https://github.com/pforret/DeduceSeason",
+    "homepage": "https://github.com/pforret/deduceseason",
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,10 @@
         }
     ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "league/geotools": "^1.1",
+        "nesbot/carbon": "^2.71",
+        "php-http/guzzle6-adapter": "^2.0"
     },
     "require-dev": {
         "laravel/pint": "^1.13",
@@ -41,7 +44,10 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

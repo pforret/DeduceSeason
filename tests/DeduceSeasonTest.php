@@ -1,14 +1,17 @@
 <?php
 
-namespace Pforret\Tests;
+namespace Pforret\DeduceSeason\Tests;
 
+use Pforret\DeduceSeason\DeduceSeason;
 use PHPUnit\Framework\TestCase;
 
-class ExampleTest extends TestCase
+class DeduceSeasonTest extends TestCase
 {
-    /** @test */
-    public function true_is_true()
+    public function testFromDateAndLatitude(): void
     {
-        $this->assertTrue(true);
+        $this->assertEquals(DeduceSeason::SEASON_WINTER, DeduceSeason::fromDateAndLatitude('2020-01-01', 50));
+        $this->assertEquals(DeduceSeason::SEASON_SUMMER, DeduceSeason::fromDateAndLatitude('2020-01-01', -50));
+        $this->assertEquals(DeduceSeason::SEASON_WINTER, DeduceSeason::fromDateAndLatitude('2023-03-20', 1));
+        $this->assertEquals(DeduceSeason::SEASON_SPRING, DeduceSeason::fromDateAndLatitude('2023-03-21', 1));
     }
 }
