@@ -3,8 +3,6 @@
 Github: 
 ![GitHub tag](https://img.shields.io/github/v/tag/pforret/DeduceSeason)
 ![Tests](https://github.com/pforret/DeduceSeason/workflows/Run%20Tests/badge.svg)
-![Psalm](https://github.com/pforret/DeduceSeason/workflows/Detect%20Psalm%20warnings/badge.svg)
-![Styling](https://github.com/pforret/DeduceSeason/workflows/Check%20&%20fix%20styling/badge.svg)
 
 Packagist: 
 [![Packagist Version](https://img.shields.io/packagist/v/pforret/DeduceSeason.svg?style=flat-square)](https://packagist.org/packages/pforret/DeduceSeason)

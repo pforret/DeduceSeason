@@ -5,7 +5,6 @@
 namespace Pforret\DeduceSeason;
 
 use Carbon\Carbon;
-use League\Geotools\Coordinate\Coordinate;
 
 class DeduceSeason
 {
@@ -25,8 +24,7 @@ class DeduceSeason
         $parsedDate = new Carbon($date);
         $twentyDays = $parsedDate->addDays(-20); // so that we can just use the months
         $twentyMonth = $twentyDays->format('m'); // just the month is enough
-        $parseCoordinates = new Coordinate("$latitude, 0");
-        $southernHemisphere = $parseCoordinates->getLatitude() < 0;
+        $southernHemisphere = $latitude < 0;
         if ($twentyMonth >= 3 && $twentyMonth < 6) {
             return $southernHemisphere ? self::SEASON_FALL : self::SEASON_SPRING;
         } elseif ($twentyMonth >= 6 && $twentyMonth < 9) {
