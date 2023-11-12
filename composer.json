@@ -1,0 +1,48 @@
+{
+    "name": "author_username/package_name",
+    "version": "2.0.1",
+    "description": "package_description",
+    "keywords": [
+        "author_username",
+        "package_name"
+    ],
+    "homepage": "https://github.com/author_username/package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "author_name",
+            "email": "author@email.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "phpunit/phpunit": "^10.0",
+        "rector/rector": "^0.18.6",
+        "vimeo/psalm": "^5.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "package_namespace\\class_name\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "package_namespace\\class_name\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "setup-ci": "vendor/bin/rector setup-ci",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
