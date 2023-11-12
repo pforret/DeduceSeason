@@ -1,17 +1,17 @@
 {
-    "name": "author_username/package_name",
+    "name": "pforret/DeduceSeason",
     "version": "2.0.1",
-    "description": "package_description",
+    "description": "deduce season from date and location",
     "keywords": [
-        "author_username",
-        "package_name"
+        "pforret",
+        "DeduceSeason"
     ],
-    "homepage": "https://github.com/author_username/package_name",
+    "homepage": "https://github.com/pforret/DeduceSeason",
     "license": "MIT",
     "authors": [
         {
-            "name": "author_name",
-            "email": "author@email.com",
+            "name": "Peter Forret",
+            "email": "peter@forret.com",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "package_namespace\\class_name\\": "src"
+            "Pforret\\DeduceSeason\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "package_namespace\\class_name\\Tests\\": "tests"
+            "Pforret\\DeduceSeason\\Tests\\": "tests"
         }
     },
     "scripts": {
